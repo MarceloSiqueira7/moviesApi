@@ -20,6 +20,7 @@ export const CardMovieContainer = styled.div`
 
         .title {
             font-size: 34px;
+            max-width: 500px;
         }
 
         .link-movie {

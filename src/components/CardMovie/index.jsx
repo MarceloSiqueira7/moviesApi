@@ -15,7 +15,7 @@ function CardMovie({ movie, showLink = true }) {
 
         <p className="vote-movie">
           <Star size={18} />
-          {movie.vote_average}
+          {parseFloat(movie.vote_average.toFixed(1))}
         </p>
         {showLink && <Link to={`/movie/${movie.id}`} className="link-movie">Detalhes</Link>}
       </div>

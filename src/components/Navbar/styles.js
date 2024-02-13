@@ -1,10 +1,8 @@
-import common from "../../styles/themes/common";
-
-import styled from "styled-components";
+import styled from 'styled-components';
+import common from '../../styles/themes/common';
 
 export const NavBarContainer = styled.nav`
     display: flex;
-    position: fixed;
     align-items: center;
     height: 10vh;
     width: 100%;
@@ -45,6 +43,6 @@ export const NavBarContainer = styled.nav`
             border: none;
         }
     }
-`
+`;
 
 export default NavBarContainer;
