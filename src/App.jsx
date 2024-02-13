@@ -1,10 +1,13 @@
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import GlobalStyle from './styles/global';
 
 function App() {
   return (
     <>
-        <GlobalStyle />
-        <h1>Teste</h1>
+      <GlobalStyle />
+      <Navbar />
+      <Outlet />
     </>
   );
 }
