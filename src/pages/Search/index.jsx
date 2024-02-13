@@ -17,19 +17,21 @@ function Search() {
     const data = await res.json();
 
     setMovies(data.results);
+    console.log(data.results);
   };
 
   useEffect(() => {
     const searchWithQueryURL = `${searchURL}?${apiKey}&query=${query}`;
     getSearchMovies(searchWithQueryURL);
-  }, []);
+  }, [query]);
 
   return (
     <SearchContainer>
-      <h2 className="title">
-        Resultados para:
-        {query}
-      </h2>
+      <div className="title-info">
+        <span>{movies.length}</span>
+        <span>Resultados encontrados para:</span>
+        <span className="title-query">{query}</span>
+      </div>
 
       <section className="moives-container">
         {movies.length === 0 && <p>Carregando...</p>}
