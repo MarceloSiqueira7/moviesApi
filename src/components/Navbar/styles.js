@@ -9,17 +9,18 @@ export const NavBarContainer = styled.nav`
     justify-content: space-between;
     padding: 0px 30px 0px 30px;
 
-    background: #111111;
+    background: ${(props) => props.theme.navbarColor};
     box-shadow:  0 0 1px 0 #9AA0AC;
 
     h2 {
+        color: ${(props) => props.theme.textColor};
         font-size: ${common.spacing.x_large};
         letter-spacing: 2px;
     }
 
     form {
         display: flex;
-        background-color: #9AA0AC;
+        background-color: ${(props) => props.theme.navbarFormColor};
         padding: 10px;
         border-radius: 99999px;
 
@@ -28,6 +29,7 @@ export const NavBarContainer = styled.nav`
             background: none;
             border: none;
             color: #000;
+            padding-left: 8px;
             font-weight: 500;
             font-size: ${common.spacing.medium};
         }

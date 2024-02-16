@@ -6,6 +6,12 @@ export const HomeContainer = styled.section`
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
+    .title {
+        margin: 30px 0 0 30px;
+        font-size: 38px;
+        font-weight: 800;
+        }
 `;
 
 export default HomeContainer;

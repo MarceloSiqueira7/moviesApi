@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import common from '../../styles/themes/common';
 
 export const CardMovieContainer = styled.div`
-    background-color: #151515;
+    background-color: ${(props) => props.theme.navbarColor};
     margin: 2rem 0 1rem;
     padding: 20px;
     border-radius: ${common.borderRadius};

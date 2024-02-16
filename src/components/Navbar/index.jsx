@@ -20,9 +20,9 @@ function Navbar() {
     <NavBarContainer>
       <h2>
         <Link to="/">
-          <Clapperboard size={38} />
-          MoviesLib
+          <Clapperboard size={38} className="icon-Title" />
         </Link>
+        MoviesLib
       </h2>
 
       <form onSubmit={handleSubmit}>

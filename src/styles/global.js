@@ -9,12 +9,12 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: #111111;
-        color: #FFFF;
+        background-color: ${(props) => props.theme};
+        color: ${(props) => props.theme};
     }
 
     a {
         text-decoration: none;
-        color: #9AA0AC;
+        color: ${(props) => props.theme.textColor};
     }
 `;
