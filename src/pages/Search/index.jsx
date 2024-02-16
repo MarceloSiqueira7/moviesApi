@@ -17,7 +17,6 @@ function Search() {
     const data = await res.json();
 
     setMovies(data.results);
-    console.log(data.results);
   };
 
   useEffect(() => {
