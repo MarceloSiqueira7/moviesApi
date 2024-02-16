@@ -21,6 +21,9 @@ export const CardMovieContainer = styled.div`
         .title {
             font-size: 34px;
             max-width: 500px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .link-movie {
