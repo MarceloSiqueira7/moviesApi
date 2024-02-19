@@ -7,10 +7,11 @@ export const HomeContainer = styled.section`
         justify-content: space-evenly;
     }
 
-    .title {
-        margin: 30px 0 0 30px;
+    .title-home {
+        margin: 2rem 0 0 4.6rem;
         font-size: 38px;
         font-weight: 800;
+        color: ${(props) => props.theme.textColor};
         }
 `;
 

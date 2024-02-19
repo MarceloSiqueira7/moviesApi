@@ -33,7 +33,6 @@ function Search() {
       </div>
 
       <section className="moives-container">
-        {movies.length === 0 && <p>Carregando...</p>}
 
         {movies.length > 0 && movies.map((movie) => (
           <CardMovie

@@ -16,6 +16,7 @@ export const CardMovieContainer = styled.div`
             align-items: center;
             margin-bottom: 10px;
             gap: 5px;
+            color: ${(props) => props.theme.textColor};
         }
 
         .title {
@@ -24,6 +25,7 @@ export const CardMovieContainer = styled.div`
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            color: ${(props) => props.theme.textColor};
         }
 
         .link-movie {

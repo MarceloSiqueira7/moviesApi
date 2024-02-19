@@ -5,6 +5,7 @@ const MovieContainer = styled.section`
     margin: 2rem;
     display: flex;
     gap: 2rem;
+    color: ${(props) => props.theme.textColor};
 
     .info-movie-container {
         max-width: 800px;
@@ -33,7 +34,8 @@ const MovieContainer = styled.section`
                 span {
                     background-color: #536FED;
                     text-align: center;
-                    width: 120px;
+                    color: #FFF;
+                    width: 160px;
                     padding: 6px;
                     border-radius: ${common.borderRadius};
                     cursor: pointer;

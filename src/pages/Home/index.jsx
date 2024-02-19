@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <HomeContainer>
-      <h2 className="title">Melhores Filmes</h2>
+      <h2 className="title-home">Melhores Filmes</h2>
 
       <section className="moives-container">
         {topMovies.length === 0 && <p>Carregando...</p>}

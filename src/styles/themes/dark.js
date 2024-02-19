@@ -4,6 +4,7 @@ export default {
   ...common,
   backgroundColor: '#111111',
   textColor: '#FFF',
-  navbarColor: '#111111',
+  navbarColor: '#151515',
   navbarFormColor: '#9AA0AC',
+  positionButtonToggle: '0',
 };

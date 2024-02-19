@@ -13,6 +13,7 @@ export const SearchContainer = styled.section`
         gap: 10px;
         font-size: 38px;
         font-weight: 800;
+        color: ${(props) => props.theme.textColor};
 
         .title-query {
             color: #536FED;
