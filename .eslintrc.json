@@ -14,6 +14,8 @@
         "react/prop-types": 0,
         "import/no-named-as-default": 0,
         "import/no-extraneous-dependencies": 0,
-        "jsx-a11y/control-has-associated-label": 0
+        "jsx-a11y/control-has-associated-label": 0,
+        "react/jsx-no-bind": 0,
+        "object-curly-newline": 0
     }
 }

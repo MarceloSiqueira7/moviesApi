@@ -18,6 +18,46 @@ export const NavBarContainer = styled.nav`
         letter-spacing: 2px;
     }
 
+    .container-form {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .container-toggle-button {
+        position: relative;
+        width: 64px;
+        margin: 4px auto;
+
+        span {
+            display: flex;
+            width: 4rem;
+            height: 1.3rem;
+            border: 1px solid ${(props) => props.theme.textColor};
+            border-radius: 9999px;
+        }
+
+        button {
+            height: 30px;
+            width: 30px;
+            background-color: ${(props) => props.theme.textColor};
+            border: 0;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: ${(props) => props.theme.positionButtonToggle};
+            z-index: 1;
+            transform: translateY(-50%);
+
+            cursor: pointer;
+
+            svg {
+                transform: translateY(10%);
+            }
+        }
+    }
+
     form {
         display: flex;
         background-color: ${(props) => props.theme.navbarFormColor};
