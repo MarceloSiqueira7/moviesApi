@@ -6,5 +6,5 @@ export default {
   textColor: '#000',
   navbarColor: '#e9ecef',
   navbarFormColor: '#FFF',
-  positionButtonToggle: '60%',
+  positionButtonToggle: '49%',
 };

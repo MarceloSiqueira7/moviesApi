@@ -19,6 +19,14 @@ export const SearchContainer = styled.section`
             color: #536FED;
         }
     }
+
+    @media (max-width: 768px) {
+        .title-info {
+            display: block;
+            font-size: 28px;
+            margin: 1rem 0 0 0.8rem;
+        }
+    }
 `;
 
 export default SearchContainer;

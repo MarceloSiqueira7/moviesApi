@@ -27,20 +27,19 @@ export const NavBarContainer = styled.nav`
 
     .container-toggle-button {
         position: relative;
-        width: 64px;
         margin: 4px auto;
 
         span {
             display: flex;
-            width: 4rem;
-            height: 1.3rem;
+            width: 3rem;
+            height: 1.8rem;
             border: 1px solid ${(props) => props.theme.textColor};
             border-radius: 9999px;
         }
 
         button {
-            height: 30px;
-            width: 30px;
+            height: 28px;
+            width: 28px;
             background-color: ${(props) => props.theme.textColor};
             border: 0;
             border-radius: 50%;
@@ -83,6 +82,42 @@ export const NavBarContainer = styled.nav`
             cursor: pointer;
             background: none;
             border: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 8px;
+
+        h2 {
+            font-size: 23px;
+            letter-spacing: normal;
+
+            svg {
+                display: none;
+            }
+        }
+
+        .container-form {
+            input {
+                max-width: 135px;
+                font-size: 13px;
+            }
+        }
+
+
+        .container-toggle-button {
+            width: auto;
+
+            span {
+                display: none;
+            }
+
+            button {
+                position: initial;
+                transform: none;
+            }
+
+
         }
     }
 `;

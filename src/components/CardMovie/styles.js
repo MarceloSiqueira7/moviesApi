@@ -7,6 +7,15 @@ export const CardMovieContainer = styled.div`
     padding: 20px;
     border-radius: ${common.borderRadius};
     text-align: left;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        border: 1px solid #536FED;
+    }
+
+    img {
+        border-radius: ${common.borderRadius};
+    }
 
     .info-movie {
         margin-top: 8px;
@@ -15,6 +24,7 @@ export const CardMovieContainer = styled.div`
             display: flex;
             align-items: center;
             margin-bottom: 10px;
+            font-weight: 600;
             gap: 5px;
             color: ${(props) => props.theme.textColor};
         }
@@ -45,8 +55,30 @@ export const CardMovieContainer = styled.div`
 
         .link-movie:hover {
             background-color: #2741b3;
-           }
+        }
+    }
 
+    @media (max-width: 768px) {
+        text-align: center;
+        padding: 20px 10px;
+        width: 380px;
+        margin: 8px;
+
+        img {
+            height: 500px;
+        }
+
+        .info-movie {
+            .title {
+                font-size: 18px;
+                width: 333px;
+            }
+
+            .vote-movie {
+                text-align: center;
+                justify-content: center;
+            }
+        }
     }
 
 `;
