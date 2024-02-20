@@ -82,6 +82,48 @@ const MovieContainer = styled.section`
             }
         }
     }
+
+    @media (max-width: 768px) {
+        display: block;
+        margin: 20px 15px;
+
+        img {
+            width: 100%;
+            text-align: center;
+        }
+
+        p, a {
+            font-size: 18px !important;
+        }
+
+        h3 {
+            font-size: 24px !important;
+        }
+
+        .info-movie-container {
+            font-size: 16px;
+
+            .title-movie {
+                font-size: 28px;
+                letter-spacing: normal;
+            }
+
+            .data-movie  {
+
+                span {
+                    font-size: 18px;
+                }
+            }
+
+            .companies-movie-container {
+
+                .companies-movie {
+                    flex-direction: column;
+                    gap: 4px;
+                }
+            }
+        }
+    }
 `;
 
 export default MovieContainer;
